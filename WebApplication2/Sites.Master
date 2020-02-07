@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sites.master.cs" Inherits="WebApplication2.Sites" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="Master" runat="server">
+    </asp:ContentPlaceHolder>
+<style>
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+.image{
+    background-image:url("Hotel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+.hotel{
+    background-image:url("hotelpng.png");
+    background-repeat: no-repeat;
+    height:10%;
+    width:10%;
+}
+</style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div class="Form" id="title" align="center">
+        <h1 style="background-color : aqua">HOTEL BOOKING APP</h1> 
+            </div>
+        <div align="right">
+                <span style="margin-left:1100px">
+                    <asp:Button ID="Home" runat="server" Text="Home" BackColor="#00ff00" BorderWidth="0" OnClick="Home_Click"/>
+                    <asp:Button ID="Login" runat="server" Text="Login" BackColor="#00ff00" BorderWidth="0" OnClick="Login_Click"/>
+                    <asp:Button ID="Register" runat="server" Text="Register" BackColor="#00ff00" BorderWidth="0" OnClick="Register_Click"/>
+                </span>
+            </div>
+        <asp:ContentPlaceHolder ID="Form" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
